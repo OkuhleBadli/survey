@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Technology Survey</title>
+</head>
+<body>
+    <h1>Safety Technology Survey</h1>
+    <p>Thank you for participating! We are gathering insights to help improve safety in the mining and construction industries through advanced technology.</p>
+
+    <form action="your_server_endpoint_here" method="POST">
+        <label>1. What is your current role in your organization?</label><br>
+        <input type="radio" name="role" value="Safety Manager"> Safety Manager<br>
+        <input type="radio" name="role" value="Operations Manager"> Operations Manager<br>
+        <input type="radio" name="role" value="Compliance Officer"> Compliance Officer<br>
+        <input type="radio" name="role" value="Other"> Other<br><br>
+
+        <label>2. How important is proactive accident prevention in your organization?</label><br>
+        <select name="importance">
+            <option>Extremely important</option>
+            <option>Very important</option>
+            <option>Moderately important</option>
+            <option>Slightly important</option>
+            <option>Not important at all</option>
+        </select><br><br>
+
+        <label>3. What safety measures does your organization currently use for accident prevention?</label><br>
+        <input type="checkbox" name="measures" value="Manual safety checks"> Manual safety checks<br>
+        <input type="checkbox" name="measures" value="Incident reporting systems"> Incident reporting systems<br>
+        <input type="checkbox" name="measures" value="IoT sensors"> IoT sensors or real-time monitoring<br>
+        <input type="checkbox" name="measures" value="Predictive analytics"> Predictive analytics<br>
+        <input type="checkbox" name="measures" value="None"> None<br><br>
+
+        <label>4. Does your organization use AI/ML for safety monitoring or accident prevention?</label><br>
+        <input type="radio" name="ai_usage" value="Yes"> Yes<br>
+        <input type="radio" name="ai_usage" value="No, but interested"> No, but interested<br>
+        <input type="radio" name="ai_usage" value="No, and not interested"> No, and not interested<br><br>
+
+        <label>5. How open would you be to using a predictive AI-powered platform for accident prevention?</label><br>
+        <select name="ai_openness">
+            <option>Very open</option>
+            <option>Somewhat open</option>
+            <option>Neutral</option>
+            <option>Somewhat hesitant</option>
+            <option>Very hesitant</option>
+        </select><br><br>
+
+        <label>6. What challenges do you face with your current safety monitoring system?</label><br>
+        <input type="checkbox" name="challenges" value="Limited real-time monitoring"> Limited real-time monitoring<br>
+        <input type="checkbox" name="challenges" value="Inadequate predictive capabilities"> Inadequate predictive capabilities<br>
+        <input type="checkbox" name="challenges" value="Fragmented safety data"> Fragmented safety data<br>
+        <input type="checkbox" name="challenges" value="Difficulties in compliance tracking"> Difficulties in compliance tracking<br>
+        <input type="checkbox" name="challenges" value="High cost of implementation"> High cost of implementation<br><br>
+
+        <label>7. Would your team find value in VR-based training for safety preparedness?</label><br>
+        <select name="vr_value">
+            <option>Yes, definitely</option>
+            <option>Possibly</option>
+            <option>Unsure</option>
+            <option>Probably not</option>
+            <option>No</option>
+        </select><br><br>
+
+        <label>8. Do you have any additional comments or specific needs regarding safety technology in your organization?</label><br>
+        <textarea name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit Survey">
+    </form>
+
+    <form action="/submit" method="POST">
+        <!-- All form fields remain the same -->
+        <input type="submit" value="Submit Survey">
+    </form>
+
+</body>
+</html>
